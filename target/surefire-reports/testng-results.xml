@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="9063" started-at="2014-11-04T07:44:18Z" finished-at="2014-11-04T07:44:27Z">
+    <groups>
+    </groups>
+    <test name="test" duration-ms="9063" started-at="2014-11-04T07:44:18Z" finished-at="2014-11-04T07:44:27Z">
+      <class name="org.testng.test.baidu">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:null(org.testng.test.baidu)]" name="setUp" is-config="true" duration-ms="1884" started-at="2014-11-04T15:44:18Z" finished-at="2014-11-04T15:44:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="testSearchMyBlog()[pri:0, instance:null(org.testng.test.baidu)]" name="testSearchMyBlog" duration-ms="6025" started-at="2014-11-04T15:44:20Z" finished-at="2014-11-04T15:44:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSearchMyBlog -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:null(org.testng.test.baidu)]" name="tearDown" is-config="true" duration-ms="1142" started-at="2014-11-04T15:44:26Z" finished-at="2014-11-04T15:44:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.testng.test.baidu -->
+    </test> <!-- test -->
+  </suite> <!-- Suite1 -->
+</testng-results>

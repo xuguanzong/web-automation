@@ -1,0 +1,17 @@
+<project name = "test"  basedir = ".">
+
+<!--指定testNg需要的Jar包-->  
+<taskdef resource="net/sf/antcontrib/antlib.properties" classpath="${ANT_HOME}/lib/testng-6.8.jar"/> 
+
+  
+<target name="run_tests" depends="compile" description="执行TestNg测试用例">  
+    <testng classpathref="test-path"
+            outputdir="${test-results.dir}"
+            haltonfailure="true"
+            useDefaultListeners="false"
+            listeners="org.uncommons.reportng.HTMLReporter,org.uncommons.reportng.JUnitXMLReporter">
+      <xmlfileset dir="." includes="run.xml"/>
+      <sysproperty key="org.uncommons.reportng.title" value="My Test Report"/>
+    </testng> 
+</target> 
+</project>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- one project with multiple targets  -->
+
+<project name = "test" default = "OPSTestFF" basedir = ".">
+<!-- paths used -->
+<property name = "src.dir" value = "src"/>
+<property name = "conf.dir" value = "conf"/>
+<property name = "dest.dir" value = "build"/>
+<property name = "dest.report" value = "report"/>
+<path id="jarfile">
+<fileset dir="lib" includes="selenium-java-2.44.0.jar" />
+<fileset dir="lib" includes="testng-6.8.8.jar" />
+<fileset dir="lib" includes= "ant-contrib-20020829.jar" />
+<fileset dir="lib" includes= "reportng-1.1.4.jar" />
+<fileset dir="lib" includes= "velocity-dep-1.4.jar" />
+</path>
+<!-- delete the output folder if it exists -->
+<delete dir="${dest.dir}" failonerror="false"/> 
+<!-- create the output folder -->
+<mkdir dir="${dest.dir}"/> 
+<mkdir dir="${dest.report}"/> 
+<!-- target to compile all test classes out -->
+<target name = "build" description="执行TestNg测试用例">
+<!-- do copy -->
+<copy todir="${dest.dir}/conf">
+<fileset dir="${conf.dir}"/>
+</copy>
+<!-- compile -->
+<javac srcdir="${src.dir}" destdir = "${dest.dir}" encoding="UTF-8" debug="true" fork = "yes">
+<classpath refid="jarfile" />
+</javac>
+</target>
+<!-- define the TestNG task -->
+<taskdef name="testng" classname="com.beust.testng.TestNGAntTask" classpathref="jarfile"/>
+
+<taskdef resource="net/sf/antcontrib/antlib.xml">
+ <classpath>
+   <pathelement location="lib/ant-contrib-20020829.jar"/>
+ </classpath>
+</taskdef>
+
+<!-- run test cases for FF -->
+<target name="run_tests" depends="compile" description="执行TestNg测试用例">  
+    <testng classpathref="compile.path"   
+        outputDir="${output.dir}"   
+        haltOnfailure="true"   
+        useDefaultListeners="false"   
+        listeners="org.uncommons.reportng.HTMLReporter,org.testng.reporters.FailedReporter" >  
+        <!--设置TestNg所包含的xml文件-->  
+        <xmlfileset dir="${basedir}" includes="run.xml" />  
+        <!--设置报告Title名称 -->  
+        <sysproperty key="org.uncommons.reportng.title" value="自动化测试报告" />  
+    </testng>  
+</target>  
+
+
+
+</project>

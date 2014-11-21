@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="testEmail"
+           tests="1"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="1.399">
+  <properties />
+  
+  
+            <testcase name="testSearchMyBlog" time="1.399" classname="org.testng.test.sendEmail" />
+      
+</testsuite>
