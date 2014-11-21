@@ -24,7 +24,7 @@ public class JDlogin
   @BeforeMethod
   public void beforeMethod() 
   {
-	  System.setProperty("webdriver.chrome.driver", "web-automation\\driver\\chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver", "web-automation:\\driver\\chromedriver.exe");
 	  driver = new ChromeDriver();
 	  driver.manage().window().maximize();
 	  
