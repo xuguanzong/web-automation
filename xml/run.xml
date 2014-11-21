@@ -3,7 +3,7 @@
 <suite name="Suite1">
 	<test name="test" junit="false" annotations="JDK">
 		<classes>
-			<class name="org.testng.test.baidu" />
+			<class name="org.testng.test.JDlogin" />
 		</classes>
 		<listeners>
             <listener class-name="org.testng.test.TestngListener" />
