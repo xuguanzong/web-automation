@@ -2,10 +2,11 @@ package org.testng.test;
 
 import java.util.concurrent.TimeUnit;
 
-import junit.framework.Assert;
 
+
+
+import org.testng.Assert;
 import org.testng.annotations.*;
-
 import org.openqa.selenium.By;  
 import org.openqa.selenium.WebDriver;  
 import org.openqa.selenium.WebElement;  
@@ -13,6 +14,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.chrome.*;
 
 import pageObjects.LogIn_Function;
+
 import org.openqa.selenium.support.PageFactory;
 
 
@@ -30,7 +32,7 @@ public class JDlogin
 	  
   }
   
-  /*
+  
   
   @Test
   public void loginsuccess() throws InterruptedException 
@@ -61,7 +63,7 @@ public class JDlogin
 	  
   }
   
-  */
+  
   
   @Test
   public void test() throws InterruptedException 
