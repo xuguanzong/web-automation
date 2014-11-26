@@ -42,7 +42,7 @@ public class JDlogin
 	  LogIn_Function loginpage = PageFactory.initElements(driver, LogIn_Function.class);
 	  loginpage.loginlink.click();
 	  Thread.sleep(3000);
-	  loginpage.LogIn_Action("584657555@qq.com", "cfadhp20090622");
+	  loginpage.LogIn_Action("584657555@qq.com", "cfadhp20090622yl");
 	  Thread.sleep(3000);
 	  Assert.assertEquals("[退出]", loginpage.logoutlink.getText());
 	  
