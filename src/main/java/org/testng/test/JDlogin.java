@@ -1,4 +1,4 @@
-﻿package org.testng.test;
+package org.testng.test;
 
 import java.util.concurrent.TimeUnit;
 
@@ -24,13 +24,13 @@ public class JDlogin
   @BeforeMethod
   public void beforeMethod() 
   {
-	  System.setProperty("webdriver.chrome.driver", "web-automation/driver/chromedriver.exe");
+	  System.setProperty("webdriver.chrome.driver", "D:\\eclipsework\\test\\driver\\chromedriver.exe");
 	  driver = new ChromeDriver();
 	  driver.manage().window().maximize();
 	  
   }
   
-  
+  /*
   
   @Test
   public void loginsuccess() throws InterruptedException 
@@ -61,15 +61,18 @@ public class JDlogin
 	  
   }
   
-  
+  */
   
   @Test
   public void test() throws InterruptedException 
   {
 	  driver.get("http://www.jd.com/");
 	  Thread.sleep(3000);
-	  driver.findElement(By.xpath("html/body/div[8]/div[8]/div[2]/div[2]/div[2]/ul/li[4]/div[1]/a/img")).click();
-	  Thread.sleep(3000);
+//      driver.findElement(By.xpath("html/body/div[8]/div[8]/div[2]/div[2]/div[2]/ul/li[4]/div[1]/a/img")).click();
+	  driver.findElement(By.cssSelector("img[alt='听妈妈讲故事1元起']")).click();
+//	  driver.findElement(By.partialLinkText("京东电子书畅读VIP 每本不到1分钱")).click();
+//	  driver.findElement(By.linkText("京东电子书畅读VIP 每本不到1分钱")).click();
+	  Thread.sleep(8000);
 	  
   }
   

@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="10377" started-at="2014-11-21T03:57:34Z" finished-at="2014-11-21T03:57:44Z">
+  <suite name="Default suite" duration-ms="15992" started-at="2014-11-21T12:45:10Z" finished-at="2014-11-21T12:45:26Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="10377" started-at="2014-11-21T03:57:34Z" finished-at="2014-11-21T03:57:44Z">
+    <test name="Default test" duration-ms="15992" started-at="2014-11-21T12:45:10Z" finished-at="2014-11-21T12:45:26Z">
       <class name="org.testng.test.JDlogin">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.testng.test.JDlogin@7c75222b]" name="beforeMethod" is-config="true" duration-ms="2513" started-at="2014-11-21T11:57:34Z" finished-at="2014-11-21T11:57:36Z">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:org.testng.test.JDlogin@7c75222b]" name="beforeMethod" is-config="true" duration-ms="2772" started-at="2014-11-21T20:45:10Z" finished-at="2014-11-21T20:45:12Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="test()[pri:0, instance:org.testng.test.JDlogin@7c75222b]" name="test" duration-ms="6657" started-at="2014-11-21T11:57:36Z" finished-at="2014-11-21T11:57:43Z">
+        <test-method status="PASS" signature="test()[pri:0, instance:org.testng.test.JDlogin@7c75222b]" name="test" duration-ms="11998" started-at="2014-11-21T20:45:12Z" finished-at="2014-11-21T20:45:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- test -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:org.testng.test.JDlogin@7c75222b]" name="afterMethod" is-config="true" duration-ms="1195" started-at="2014-11-21T11:57:43Z" finished-at="2014-11-21T11:57:44Z">
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:org.testng.test.JDlogin@7c75222b]" name="afterMethod" is-config="true" duration-ms="1209" started-at="2014-11-21T20:45:24Z" finished-at="2014-11-21T20:45:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->

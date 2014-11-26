@@ -5,8 +5,7 @@
     <classes>
       <class name="org.testng.test.JDlogin">
         <methods>
-          <include name="afterMethod"/>
-          <include name="loginsuccess"/>
+          <include name="test"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- org.testng.test.JDlogin -->
