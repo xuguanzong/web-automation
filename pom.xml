@@ -67,15 +67,8 @@
     	<version>20020829</version>
     </dependency>
     <dependency>
-        <groupId>org.uncommons</groupId>
-        <artifactId>reportng</artifactId>
-        <version>1.1.2</version>
-        <exclusions>
-            <exclusion>
-                <groupId>org.testng</groupId>
-                <artifactId>testng</artifactId>
-            </exclusion>
-        </exclusions>
+      <groupId>org.testng</groupId>
+      <artifactId>testng</artifactId>
     </dependency>
     <dependency>
     	<groupId>com.google.inject</groupId>
