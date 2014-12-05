@@ -59,7 +59,7 @@ public class JDlogin
 	  loginpage.LogIn_Action("", "");
 	  Thread.sleep(3000);
 	  Assert.assertEquals("请输入邮箱/用户名/已验证手机", loginpage.loginname_error.getText());
-	  Assert.assertEquals("请输入密码", loginpage.loginpwd_error.getText());
+	  Assert.assertEquals("请输入", loginpage.loginpwd_error.getText());
 	  
   }
   
