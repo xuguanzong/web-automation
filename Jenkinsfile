@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        build(propagate: true, job: 'pipeline')
+        build job: 'pipeline'
       }
     }
   }
